@@ -2,12 +2,10 @@ import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
 
 class AppState extends EventEmitter {
-  /** @type {Pizza[]} */
-  pizzas = []
-  /** @type {Topping[]} */
-  toppings = []
-}
 
+
+  Cash = 0
+}
 export const ProxyState = new Proxy(new AppState(), {
   get(target, prop) {
     isValidProp(target, prop)
