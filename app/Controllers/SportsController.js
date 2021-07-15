@@ -17,12 +17,10 @@ export default class SportsController {
   }
 
   addCash() {
-
-
+    sportsService.addCash()
   }
-}
 
-createItem()
-{
-  sportsService.createItem()
+  createItem() {
+    sportsService.createItem()
+  }
 }

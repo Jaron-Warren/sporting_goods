@@ -5,6 +5,10 @@ class SportsService {
 
   }
 
+  addCash() {
+    ProxyState.Cash += 100
+  }
+
 }
 
 export const sportsService = new SportsService()

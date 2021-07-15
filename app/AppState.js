@@ -4,7 +4,7 @@ import { isValidProp } from "./Utils/isValidProp.js"
 class AppState extends EventEmitter {
 
 
-  Cash = 0
+  cash = 0
 
 }
 export const ProxyState = new Proxy(new AppState(), {
