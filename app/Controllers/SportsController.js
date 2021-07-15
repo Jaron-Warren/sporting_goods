@@ -5,7 +5,7 @@ import { loadState, saveState } from "../Utils/LocalStorage.js"
 
 function _draw() {
   // initalization of template variable
-  console.log(ProxyState.Cash)
+  // console.log(ProxyState.Cash)
 
   let template = ''
   let sportitems = ProxyState.sportitems
@@ -27,12 +27,12 @@ export default class SportsController {
   }
 
   addCash() {
-    console.log('At Controller- click add cash')
+    //  console.log('At Controller- click add cash')
     sportsService.addCash()
   }
 
-  createItem() {
+  addCart(itemId) {
     console.log('At Controller- Click Item')
-    sportsService.createItem()
+    sportsService.addCart(itemId)
   }
 }
