@@ -1,3 +1,5 @@
+import { ProxyState } from "../AppState.js"
+import { Sport } from "../Models/Sport.js"
 class SportsService {
 
   createItem() {
@@ -6,4 +8,4 @@ class SportsService {
 
 
 
-  export const sportsService = new SportsService()
+  export sportsService = new SportsService
