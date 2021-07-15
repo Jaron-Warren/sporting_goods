@@ -1,14 +1,14 @@
 import { EventEmitter } from "./Utils/EventEmitter.js"
 import { isValidProp } from "./Utils/isValidProp.js"
-import { Sport } from "./Models/Sport.js"
+import Sport from "./Models/Sport.js"
 
 class AppState extends EventEmitter {
   sportitems = [
     new Sport({
-      Item: 'Running Shoe',
-      Price: '120',
-      Description: 'Nike Sports running show',
-      Qty: '$200,000',
+      item: 'Running Shoe',
+      price: '120.00',
+      description: 'Nike Sports running show',
+      qty: '200',
       imgurl: "https://ssl.cdn-redfin.com/v374.3.1/images/merch/generalImages/CompleteSolution_Q1_2020_557_YardSign2.jpg"
     })
   ]

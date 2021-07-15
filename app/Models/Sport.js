@@ -3,16 +3,19 @@ import { generateId } from "../Utils/GenerateId.js";
 
 export default class Sport {
 
-  constructor(item, price, description, Stock, imgurl) {
+  constructor({ item, price, desc, Stock, imgurl, id = generateId() }) {
+    debugger;
+    this.id = id
     this.item = item
     this.price = price
-    this.description = desscription || "no Description is provided at this point of time"
+    this.description = desc || "no Description is provided at this point of time"
     this.stock = this.stock
     this.imgurl = imgurl || '//placehold.it/200x200'
+    //  cash = Cash
   }
   // to make 1st char uppercase
   // str.charAt(0).toUpperCase()+str.slice(1);
-  get Template{
+  get Template() {
     return `
     <div class="col-md-3 col-sm-2 p-2 m-3">
       <div class="item bg-light shadow">

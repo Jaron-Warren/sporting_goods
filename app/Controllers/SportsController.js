@@ -4,11 +4,15 @@ import { sportsService } from "../Services/SportsService.js";
 
 function _draw() {
   // initalization of template variable
+  console.log(ProxyState.Cash)
+
   let template = ''
   let sportitems = ProxyState.sportitems
   sportitems.forEach(sitems => template += sitems.Template)
 
   document.getElementById('Items').innerHTML = template
+  document.getElementById('cash').innerText = ProxyState.Cash
+
 }
 
 export default class SportsController {
@@ -22,10 +26,12 @@ export default class SportsController {
   }
 
   addCash() {
+    console.log('At Controller- click add cash')
     sportsService.addCash()
   }
 
   createItem() {
+    console.log('At Controller- Click Item')
     sportsService.createItem()
   }
 }
