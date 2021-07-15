@@ -5,6 +5,7 @@ class AppState extends EventEmitter {
 
 
   Cash = 0
+
 }
 export const ProxyState = new Proxy(new AppState(), {
   get(target, prop) {
