@@ -1,12 +1,14 @@
-import { ProxyState } from "../AppState";
+import { ProxyState } from "../AppState.js";
+
 
 
 
 function _draw() {
   // initalization of template variable
   let template = ''
-
+  // Need to add more to the template
 }
+
 export default class SportsController {
   constructor() {
     ProxyState.on('items', _draw)
