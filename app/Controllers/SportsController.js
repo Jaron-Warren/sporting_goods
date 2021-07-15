@@ -1,6 +1,5 @@
 import { ProxyState } from "../AppState.js";
-
-
+import { sportsService } from "../Services/SportsService.js";
 
 
 function _draw() {
@@ -15,6 +14,11 @@ export default class SportsController {
     ProxyState.on('items', saveState)
     // Initial draw, later on need to fetch from Local storage
     _draw()
+  }
+
+  addCash() {
+
+
   }
 }
 
