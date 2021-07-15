@@ -2,7 +2,7 @@
 
 class App {
   // valuesController = new ValuesController();
-  sportsController = new Sports
+  sportsController = new sportsController
 }
 
 window["app"] = new App();
