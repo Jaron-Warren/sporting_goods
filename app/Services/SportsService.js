@@ -1,10 +1,9 @@
 class SportsService {
 
-  createItem(shanker) {
+  createItem() {
 
   }
-}
 
 
 
-export const sportsService = new SportsService()
+  export const sportsService = new SportsService()
