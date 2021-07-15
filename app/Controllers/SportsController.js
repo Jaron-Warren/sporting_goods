@@ -10,8 +10,8 @@ function _draw() {
 
 export default class SportsController {
   constructor() {
-    ProxyState.on('items', _draw)
-    ProxyState.on('items', saveState)
+    ProxyState.on('sportitem', _draw)
+    ProxyState.on('sportitem', saveState)
     // Initial draw, later on need to fetch from Local storage
     _draw()
   }
