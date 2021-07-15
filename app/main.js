@@ -1,7 +1,8 @@
-import PizzasController from "./Controllers/PizzasController.js";
+//import PizzasController from "./Controllers/PizzasController.js";
+
 class App {
   // valuesController = new ValuesController();
-  pizzasController = new PizzasController()
+  sportsController = new Sports
 }
 
 window["app"] = new App();
