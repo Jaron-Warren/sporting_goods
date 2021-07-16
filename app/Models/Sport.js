@@ -25,7 +25,7 @@ export default class Sport {
             </div>
               <p class="${this.stock} == '0' ? 'Out of Stock' : 'In Stock :' + ${this.stock}">${this.stock}</p>
               <p class="${this.id}">${this.id}</p>
-              <button type = "submit" onclick="app.SportsController.createItem('${this.id}')" class = "btn btn-outline-success"> Add to Cart</button>
+              <button type = "submit" onclick="app.sportsController.addCart('${this.item}')" class = "btn btn-outline-success"> Add to Cart</button>
            </div >
       </div >
     </div >
