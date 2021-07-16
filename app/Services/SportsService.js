@@ -14,9 +14,13 @@ class SportsService {
       ProxyState.Cash -= found.price
       found.stock--
       //     ProxyState.cartitems = [...ProxyState.cartitems, cartitems(found)]
+      console.log('At Service- Add item: ' + found.item)
       ProxyState.sportitems = ProxyState.sportitems
     }
-    console.log('At Service- Add item: ' + found.item)
+    else {
+      window.alert("Sorry insufficient money to buy.Please top up")
+    }
+
   }
 }
 
