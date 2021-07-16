@@ -22,6 +22,7 @@ export default class SportsController {
     ProxyState.on('Cash', _draw)
     ProxyState.on('sportitems', saveState)
     ProxyState.on('Cash', saveState)
+
     // Initial draw, later on need to fetch from Local storage
     _draw()
   }
@@ -31,8 +32,8 @@ export default class SportsController {
     sportsService.addCash()
   }
 
-  addCart(itemId) {
-    console.log('At Controller- Click Item')
-    sportsService.addCart(itemId)
+  addCart(item) {
+    // console.log('At Controller- Click Item' + item)
+    sportsService.addCart(item)
   }
 }
